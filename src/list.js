@@ -12,7 +12,7 @@ export default class List {
 
   init ( files )
   {
-    this._element.innerHTML = files.map( ( file ) => `<li class="form__uploaded-item"><h3 class="form__uploaded-title">${file.name}</h3><p class="form__uploaded-size">${Math.round( file.size / 1024 )} kb</p></li>` ).join( '' );
+    this._element.innerHTML = files.map( ( file ) => `<li class="form__uploaded-item"><h3 class="form__uploaded-title">${file.name}</h3><p class="form__uploaded-size">${Math.ceil( file.size / 1024 )} kb</p></li>` ).join( '' );
     this._element.addEventListener( 'mousedown', this._grabItem );
   }
 
