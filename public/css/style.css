@@ -119,8 +119,6 @@ h1
 
   padding: 0;
   margin: 0;
-
-  list-style: none;
 }
 
 .form__uploaded-item
@@ -129,6 +127,8 @@ h1
   padding: 176px 12px 12px;
 
   text-align: center;
+
+  list-style: none;
 
   cursor: grab;
 
@@ -149,6 +149,16 @@ h1
 {
   margin-right: 4px;
 }
+
+.form__uploaded-item--grabbed
+{
+  position: absolute;
+
+  pointer-events: none;
+
+  background-color: #ddd;
+}
+
 
 .form__uploaded-title
 {
